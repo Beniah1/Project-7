@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/style.css" />
     <!-- bootstrap link  -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -11,14 +13,125 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- aos animation link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
+
+  <!-- This is the main navbar container -->
+  <nav>
+    <section>
+      <nav class="navbar navbar-expand-lg nav-custom-bg-clr">
+    <div class="container-fluid">
+      <!-- This is the brand logo/text. You can replace "Navbar" with your own text or an image -->
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+      <!-- This is the button that triggers the offcanvas when clicked. It's usually displayed on smaller screens -->
+      <button
+        class="navbar-toggler ms-auto"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- TODO This is the offcanvas container. You can change its width by adding a custom CSS class and setting the width property -->
+      <div
+        class="offcanvas offcanvas-end w-50 offcanvas-custom-bg"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <!-- This is the header of the offcanvas. It contains the title and the close button -->
+        <div class="offcanvas-header">
+          <!-- You can replace "Offcanvas" with your own title -->
+          <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">
+            Offcanvas
+          </h5>
+
+          <!-- This is the close button. It closes the offcanvas when clicked -->
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <!-- This is the body of the offcanvas. It usually contains the navigation links or other content -->
+        <div class="offcanvas-body">
+          <!-- This is the navigation menu. You can add or remove items as needed -->
+          <ul
+            class="navbar-nav mx-auto mb-2 mb-lg-0 fs-5 text-uppercase fw-bold"
+          >
+            <!-- These are the individual navigation items. You can replace "#" with your own URLs -->
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Review</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+    </section>
+  </nav>
+  <main>
+    <section>
+      <div class="container mt-5 ">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="text-uppercase fw-bold">I'M A UI/UX DESIGNER FROM LONDON, UK</h1>
+            <p class=" fw-bold">
+              I am John Doe, And I craft high-performing and delightful experiences tailored and conversion-focused
+            </p>
+            <button
+            type="button"
+            class="btn btn-primary"
+          >
+            Explore my work 
+          </button>
+          </div>
+          <div class="col-md-6">
+            <img src="img/main-bg.jpg" alt="" class="img-fluid" />
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <body>
-    <h1>Hello, world!</h1>
-    <!-- bootstrap js link  -->
+
+    <!-- bootstrap js script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <!-- aos animation script -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

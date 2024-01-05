@@ -1,0 +1,64 @@
+/* This section styles the navbar toggle button. The color and border color are set to white. */
+.navbar-toggler {
+  color: white !important;
+  border-color: white !important;
+}
+
+/* This section styles the navbar toggle icon. The background image is set to a white SVG image. */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* This section styles the navbar background. The position is set to relative and the background image is set to a specific image. */
+.nav-custom-bg-clr {
+  position: relative;
+  background-image: url("/img/nav-bar-clr2.jpg");
+}
+
+/* This section adds a pseudo-element to the navbar background. The pseudo-element covers the entire navbar and has pointer events disabled. */
+.nav-custom-bg-clr::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+/* This section styles the navbar links. The default color is black. */
+ul.navbar-nav li a {
+  color: rgb(0, 0, 0); /* Default color */
+}
+
+/* This section styles the navbar links on hover. The color is set to white. */
+ul.navbar-nav li a:hover {
+  color: #ffffff; /* Color on hover */
+}
+
+/* This section styles the offcanvas background. The position is set to relative. */
+.offcanvas-custom-bg {
+  position: relative;
+}
+
+/* This section adds a pseudo-element to the offcanvas background. The pseudo-element covers the entire offcanvas, has a specific background image, and is placed behind the content. */
+.offcanvas-custom-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("/img/off-canvas-bg2.jpg");
+  /* filter: blur(5px);  */
+  z-index: -1;
+  border: none; /* Add this line */
+  box-shadow: none; /* Add this line */
+  outline: none; /* Add this line */
+}
+
+/* img border  */
+img {
+  border-radius: 20%;
+  width:200px;
+}
